@@ -69,9 +69,9 @@ tap-to-click=true
   to ensure that it's listed as available.
 
 **Gschema.override files don't support relocatable schemas & locking settings.**   
-For that functionality, you should use `dconf-update-service` module.
+Certain settings such as custom keybinds cannot be set using this module. For that functionality, you should use the `bling` module and install `dconf-update-service`.
 
-Relocatable schemas are rare, so most users won't run into this scenario.
+To get the list of relocatable schemas, run `gsettings list-relocatable-schemas`.
 
 ### Example of relocatable schemas
 gsettings format:
